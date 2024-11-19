@@ -18,8 +18,8 @@ const MiddleSection = () => {
 
   const toggleExpand = (section) => {
     setExpanded((prevExpanded) => ({
-      ...prevExpanded,
-      [section]: !prevExpanded[section]
+      // ...prevExpanded,
+      [section]: !prevExpanded[section],
     }));
   };
 
