@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/name.jpg";
+import img from "../assets/download.jpeg";
 
 const Dean = () => {
   return (
@@ -22,14 +22,9 @@ const Dean = () => {
         </h1>
         <div className="bg-gradient-to-r from-blue-50 to-transparent p-6 rounded-lg shadow-sm">
           <p className="tracking-wide text-gray-700 text-lg leading-relaxed font-semibold">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-            nobis aperiam sit at fu Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Perferendis, culpa. Magni quibusdam voluptas
-            mollitia incidunt eius ut hvoiwjhvjhv wdnvhjvhlx ocsjow xvjhv nesciunt deserunt ea odio odit. Nesciunt
-            minus vitae ducimus tempora incidunt aliquid. Eligendi?giat qui
-            laborum provident, nostrum minima similique! Eligendi repellat
-            voluptatem repellendus dolorem deleniti sequi exercitationem
-            architecto quisquam?
+            Dr. Raghuraj Singh Suryavanshi, the Dean of the Startup Cell at PSIT, is a visionary leader with a deep commitment to fostering innovation, entrepreneurship, and the spirit of problem-solving among students. With a rich background in mentoring startups, Dr. Suryavanshi brings invaluable expertise in business development, venture creation, and strategic growth. His extensive experience in guiding young entrepreneurs helps them navigate the complexities of launching and scaling successful ventures.
+
+Under Dr. Suryavanshi's leadership, the Startup Cell has evolved into a dynamic and thriving ecosystem that supports students at every stage of their entrepreneurial journey. From ideation and prototyping to funding and market entry, the Startup Cell provides the necessary resources, mentorship, and industry connections to turn innovative ideas into successful business ventures.
           </p>
         </div>
         <div className="mt-10 flex justify-center items-center">

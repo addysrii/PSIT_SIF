@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../assets/logo2.png";
+import img1 from "../assets/download.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter,faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {

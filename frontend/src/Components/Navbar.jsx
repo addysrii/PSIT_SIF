@@ -1,7 +1,7 @@
-import img6 from "../assets/img6.jpg"
-import img7 from "../assets/img7.jpg"
-import img8 from "../assets/img8.jpg"
-import img from "../assets/nidhi.jpg"
+import img6 from "../assets/img6.png"
+import img7 from "../assets/img7.png"
+import img8 from "../assets/img8.png"
+import img from "../assets/nidhi.png"
 
 
 import React, { useState, useEffect } from 'react';
@@ -46,7 +46,7 @@ const navItems = [
               {/* Left Logos */}
               <div className="flex items-center space-x-6">
                 <div className="relative group">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-transform group-hover:scale-105">
+                  <div className="w-28 h-28  overflow-hidden transform transition-transform group-hover:scale-105">
                     <div className="w-full h-full relative">
                       <img
                         src={img6}
@@ -57,7 +57,7 @@ const navItems = [
                   </div>
                 </div>
                 <div className="relative group">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-transform group-hover:scale-105">
+                  <div className="w-28 h-28  overflow-hidden  transform transition-transform group-hover:scale-105">
                     <div className="w-full h-full relative">
                       <img
                         src={img7}
@@ -71,8 +71,8 @@ const navItems = [
 
               {/* Central Text Content */}
               <div className="text-center flex-1 px-8">
-                <h1 className="text-4xl font-bold text-gray-800 mb-2 tracking-tight">
-                  PSIT STARTUP AND  INCUBATION CENTER
+                <h1 className="text-3xl font-bold text-gray-800 mb-2 tracking-tight">
+                  PSIT STARTUP AND  INCUBATION FOUNDATION
                 </h1>
                 
                 <div className="flex items-center justify-center space-x-4">
@@ -86,7 +86,7 @@ const navItems = [
               {/* Right Logos */}
               <div className="flex items-center space-x-6">
                 <div className="relative group">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-transform group-hover:scale-105">
+                  <div className="w-28 h-28  overflow-hidden  transform transition-transform group-hover:scale-105">
                     <div className="w-full h-full relative">
                       <img
                         src={img8}
@@ -97,7 +97,7 @@ const navItems = [
                   </div>
                 </div>
                 <div className="relative group">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-transform group-hover:scale-105">
+                  <div className="w-28 h-28 overflow-hidden  transform transition-transform group-hover:scale-105">
                     <div className="w-full h-full relative">
                       <img
                         src={img}
