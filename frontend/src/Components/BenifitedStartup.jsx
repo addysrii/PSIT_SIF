@@ -10,7 +10,7 @@ const StartupShowcase = () => {
 
   const startups = [
     {
-      name: 'Smoocha',
+      name: 'Samocha',
       logo: 'https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp',
       sector: 'Food and Restaurants ',
       description: 'Samocha, born from the college struggles of Shivendra and Akash, delivers fresh chai and snacks. ',

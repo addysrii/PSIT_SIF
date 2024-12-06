@@ -52,21 +52,25 @@ const MiddleSection = () => {
               <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div
                   className="flex justify-between items-center p-6 cursor-pointer"
-                  onClick={() => toggleExpand('questionPaper')}
+                  onClick={() => toggleExpand('criteria')}
                 >
                   <h3 className="text-xl font-semibold text-gray-900">
                     Criteria
                   </h3>
-                  {expandedSection === 'questionPaper' ? (
+                  {expandedSection === 'criteria' ? (
                     <ChevronUp className="w-6 h-6 text-blue-600" />
                   ) : (
                     <ChevronDown className="w-6 h-6 text-blue-600" />
                   )}
                 </div>
-                {expandedSection === 'questionPaper' && (
+                {expandedSection === 'criteria' && (
                   <div className="px-6 pb-6">
                     <div className="bg-blue-50 p-4 rounded-lg text-gray-700">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum consequatur debitis impedit ullam totam hic sint alias, ipsa doloremque quas atque blanditiis nulla veritatis ad deserunt modi est nostrum.
+                    Individual Innovators or Startups: Open to students, entrepreneurs, and innovators with innovative ideas or prototypes.
+Stage of Idea: Should have a well-defined idea or an early-stage prototype with potential for commercialization.
+Focus Areas: Ideas should align with societal, technological, or economic challenges and have scalable potential.
+Commitment: Applicants must commit to using the i-TBI facilities and mentorship to develop their idea into a startup or product.
+Inclusion: Priority may be given to underrepresented groups or regions lacking innovation ecosystems.
                       <a href="#" className="text-blue-600 hover:underline block mt-2">
                         Learn more →
                       </a>
@@ -92,7 +96,14 @@ const MiddleSection = () => {
                 {expandedSection === 'testPapers' && (
                   <div className="px-6 pb-6">
                     <div className="bg-blue-50 p-4 rounded-lg text-gray-700">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero harum minima nisi, tenetur incidunt consequuntur esse excepturi temporibus sunt, in corrupti praesentium sequi aspernatur perspiciatis suscipit.
+               <h1 className='font-bold'>Vision</h1> 
+To foster a culture of innovation and entrepreneurship by transforming novel ideas into scalable startups, empowering individuals and communities to contribute to India's socio-economic growth.
+<h1 className='font-bold'> Target   </h1>
+- **Idea to Startup Conversion:** Enable innovators to transform ideas into sustainable startups.  
+- **Ecosystem Development:** Establish a robust innovation and entrepreneurship ecosystem within the host institution and nearby regions.  
+- **Inclusivity:** Support innovators from diverse backgrounds, ensuring equitable opportunities for all.  
+- **Prototype to Product:** Facilitate the journey from prototype development to market-ready products through funding and mentorship.  
+- **Capacity Building:** Enhance the entrepreneurial capabilities of students, faculties, and local communities.  
                       <a href="#" className="text-blue-600 hover:underline block mt-2">
                         Learn more →
                       </a>

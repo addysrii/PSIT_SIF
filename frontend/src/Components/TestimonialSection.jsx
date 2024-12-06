@@ -23,8 +23,8 @@ const TestimonialSection = () => {
       imageSrc: `${img3}`
     },
     {
-      name: "Anurag Dhawan",
-      role: "CEO PSIT SIF",
+      name: "Dr. Raghuraj Singh Suryavanshi",
+      role: "Dean PSIT (Startup and Incubation Foundation)",
       comment: "Fostering innovation through excellence in teaching and research.",
       imageSrc: "../assets/download (2).jpg"
     }
