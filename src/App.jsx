@@ -6,19 +6,25 @@ import ProgramPartners from './Components/ProgramPartners'
 import Dean from './Components/Dean'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
+import MissionSection from './Components/MissionSection'
+import TestimonialSection from './Components/TestimonialSection'
+
 const App = () => {
   return (
    <>
-   <div className='bg-white'>
+   <div className='bg-blue-50 overflow-hidden '>
     <Navbar/>
+    <MissionSection/>
+    <TestimonialSection/>
    <MiddleSection/>
-   <div className=' mx-4 pb-8'>
+
    <BenifitedStartup/>
    <Events/>
    <ProgramPartners/>
-   <Dean></Dean>
+
+   {/* <Dean></Dean> */}
    <Footer/>
-   </div>
+   
   
    </div>
    </>

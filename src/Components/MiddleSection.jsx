@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Target, Lightbulb, Users, BadgeDollarSign } from 'lucide-react';
 import img from "../assets/name.jpg";
-import img2 from "../assets/th.jpg";
-import img5 from "../assets/img5.jpg";
+import img2 from "../assets/th.png";
+import img5 from "../assets/banner.jpg";
+
 const MiddleSection = () => {
-  const [expanded, setExpanded] = useState({
-    questionPaper: false,
-    testPapers: false
-  });
+
+  const [expandedSection, setExpandedSection] = useState(null);
 
   const highlights = [
-    { icon: <Target className="w-6 h-6 text-black" />, text:<p className='text-black'> Foster Innovation</p> },
-    { icon: <Lightbulb className="w-6 h-6 text-black" />, text: <p className='text-black'>Support Startups </p>},
+    { icon: <Target className="w-6 h-6 text-black" />, text: <p className='text-black'> Foster Innovation</p> },
+    { icon: <Lightbulb className="w-6 h-6 text-black" />, text: <p className='text-black'>Support Startups </p> },
     { icon: <Users className="w-6 h-6 text-black" />, text: <p className='text-black'>Build Community</p> },
     { icon: <BadgeDollarSign className="w-6 h-6 text-black" />, text: <p className='text-black'>Provide Funding</p> }
   ];
 
   const toggleExpand = (section) => {
-    setExpanded((prevExpanded) => ({
-      ...prevExpanded,
-      [section]: !prevExpanded[section]
-    }));
+    setExpandedSection(expandedSection === section ? null : section);
   };
 
   return (
@@ -45,8 +41,8 @@ const MiddleSection = () => {
                 ))}
               </div>
 
-              <p className="text-gray-600 text-md leading-relaxed font-semibold ">
-                Inclusive TBI is a three years duration initiative supported by the Department of Science & Technology (DST) for educational institutions who are likely to foster innovation and entrepreneurship culture among the students, faculties, entrepreneurs, and nearby communities. It is expected that students, innovators and entrepreneurs will take up innovative ideas/projects and with mentoring support from the academicand startup ecosystem and try to build a startup around the innovative idea/project.The outcome of the i-TBI shall be converting ideas into startups. i-TBI (Inclusive TBI)would also create a culture of innovation & entrepreneurship in the Host Institution (HI)and nearby geographies. i-TBI will be equipped with grants-in-aid funding support to innovators to convert ideas to prototype and prototype to product.
+              <p className="text-gray-600 text-md leading-relaxed font-semibold">
+                Inclusive TBI is a three years duration initiative supported by the Department of Science & Technology (DST) for educational institutions who are likely to foster innovation and entrepreneurship culture among the students, faculties, entrepreneurs, and nearby communities. It is expected that students, innovators and entrepreneurs will take up innovative ideas/projects and with mentoring support from the academicand startup ecosystem and try to build a startup around the innovative idea/project.The outcome of the i-TBI shall be converting ideas into startups. i-TBI (Inclusive TBI)would also create a culture of innovation & entrepreneurship in the Host Institution (HI)and nearby geographies. i-TBI will be equipped with grants-in-aid funding support to innovators to convert ideas to prototype and prototype to product.
               </p>
             </div>
 
@@ -55,21 +51,25 @@ const MiddleSection = () => {
               <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div
                   className="flex justify-between items-center p-6 cursor-pointer"
-                  onClick={() => toggleExpand('questionPaper')}
+                  onClick={() => toggleExpand('criteria')}
                 >
                   <h3 className="text-xl font-semibold text-gray-900">
                     Criteria
                   </h3>
-                  {expanded.questionPaper ? (
+                  {expandedSection === 'criteria' ? (
                     <ChevronUp className="w-6 h-6 text-blue-600" />
                   ) : (
                     <ChevronDown className="w-6 h-6 text-blue-600" />
                   )}
                 </div>
-                {expanded.questionPaper && (
+                {expandedSection === 'criteria' && (
                   <div className="px-6 pb-6">
                     <div className="bg-blue-50 p-4 rounded-lg text-gray-700">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum consequatur debitis impedit ullam totam hic sint alias, ipsa doloremque quas atque blanditiis nulla veritatis ad deserunt modi est nostrum.
+                    Individual Innovators or Startups: Open to students, entrepreneurs, and innovators with innovative ideas or prototypes.
+Stage of Idea: Should have a well-defined idea or an early-stage prototype with potential for commercialization.
+Focus Areas: Ideas should align with societal, technological, or economic challenges and have scalable potential.
+Commitment: Applicants must commit to using the i-TBI facilities and mentorship to develop their idea into a startup or product.
+Inclusion: Priority may be given to underrepresented groups or regions lacking innovation ecosystems.
                       <a href="#" className="text-blue-600 hover:underline block mt-2">
                         Learn more →
                       </a>
@@ -86,16 +86,23 @@ const MiddleSection = () => {
                   <h3 className="text-xl font-semibold text-gray-900">
                     Vision and Targets
                   </h3>
-                  {expanded.testPapers ? (
+                  {expandedSection === 'testPapers' ? (
                     <ChevronUp className="w-6 h-6 text-blue-600" />
                   ) : (
                     <ChevronDown className="w-6 h-6 text-blue-600" />
                   )}
                 </div>
-                {expanded.testPapers && (
+                {expandedSection === 'testPapers' && (
                   <div className="px-6 pb-6">
                     <div className="bg-blue-50 p-4 rounded-lg text-gray-700">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero harum minima nisi, tenetur incidunt consequuntur esse excepturi temporibus sunt, in corrupti praesentium sequi aspernatur perspiciatis suscipit.
+               <h1 className='font-bold'>Vision</h1> 
+To foster a culture of innovation and entrepreneurship by transforming novel ideas into scalable startups, empowering individuals and communities to contribute to India's socio-economic growth.
+<h1 className='font-bold'> Target   </h1>
+- **Idea to Startup Conversion:** Enable innovators to transform ideas into sustainable startups.  
+- **Ecosystem Development:** Establish a robust innovation and entrepreneurship ecosystem within the host institution and nearby regions.  
+- **Inclusivity:** Support innovators from diverse backgrounds, ensuring equitable opportunities for all.  
+- **Prototype to Product:** Facilitate the journey from prototype development to market-ready products through funding and mentorship.  
+- **Capacity Building:** Enhance the entrepreneurial capabilities of students, faculties, and local communities.  
                       <a href="#" className="text-blue-600 hover:underline block mt-2">
                         Learn more →
                       </a>
@@ -134,16 +141,15 @@ const MiddleSection = () => {
                     <p className="text-amber-100 text-sm">Join the innovation ecosystem and transform your ideas into reality</p>
                   </div>
                 </div>
-                
               </div>
             </div>
-             <div className="mt-12 w-full h-[300px]">
-                  <img
-                    src={img5}
-                    alt="Background Pattern"
-                    className="w-full h-full  rounded-lg"
-                  />
-                </div>
+            <div className="mt-12 w-full h-[300px]">
+              <img
+                src={img5}
+                alt="Background Pattern"
+                className="w-full h-full rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
